@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBF275B21BD96B370084A449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275B11BD96B370084A449 /* AppDelegate.swift */; };
+		FBF275B41BD96B370084A449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275B31BD96B370084A449 /* ViewController.swift */; };
+		FBF275B71BD96B370084A449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF275B51BD96B370084A449 /* Main.storyboard */; };
+		FBF275B91BD96B370084A449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF275B81BD96B370084A449 /* Assets.xcassets */; };
+		FBF275BC1BD96B370084A449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */; };
+		FBF275C71BD96B380084A449 /* Infuse_BeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275C61BD96B380084A449 /* Infuse_BeaconTests.swift */; };
+		FBF275D21BD96B380084A449 /* Infuse_BeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF275C31BD96B380084A449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF275A61BD96B370084A449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF275AD1BD96B370084A449;
+			remoteInfo = "Infuse Beacon";
+		};
+		FBF275CE1BD96B380084A449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF275A61BD96B370084A449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF275AD1BD96B370084A449;
+			remoteInfo = "Infuse Beacon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBF275AE1BD96B370084A449 /* Infuse Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infuse Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF275B11BD96B370084A449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBF275B31BD96B370084A449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBF275B61BD96B370084A449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF275B81BD96B370084A449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF275BB1BD96B370084A449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBF275BD1BD96B370084A449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF275C21BD96B380084A449 /* Infuse BeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infuse BeaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF275C61BD96B380084A449 /* Infuse_BeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infuse_BeaconTests.swift; sourceTree = "<group>"; };
+		FBF275C81BD96B380084A449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF275CD1BD96B380084A449 /* Infuse BeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infuse BeaconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infuse_BeaconUITests.swift; sourceTree = "<group>"; };
+		FBF275D31BD96B380084A449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF275AB1BD96B370084A449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275BF1BD96B380084A449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275CA1BD96B380084A449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBF275A51BD96B370084A449 = {
+			isa = PBXGroup;
+			children = (
+				FBF275B01BD96B370084A449 /* Infuse Beacon */,
+				FBF275C51BD96B380084A449 /* Infuse BeaconTests */,
+				FBF275D01BD96B380084A449 /* Infuse BeaconUITests */,
+				FBF275AF1BD96B370084A449 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF275AF1BD96B370084A449 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275AE1BD96B370084A449 /* Infuse Beacon.app */,
+				FBF275C21BD96B380084A449 /* Infuse BeaconTests.xctest */,
+				FBF275CD1BD96B380084A449 /* Infuse BeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF275B01BD96B370084A449 /* Infuse Beacon */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275B11BD96B370084A449 /* AppDelegate.swift */,
+				FBF275B31BD96B370084A449 /* ViewController.swift */,
+				FBF275B51BD96B370084A449 /* Main.storyboard */,
+				FBF275B81BD96B370084A449 /* Assets.xcassets */,
+				FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */,
+				FBF275BD1BD96B370084A449 /* Info.plist */,
+			);
+			path = "Infuse Beacon";
+			sourceTree = "<group>";
+		};
+		FBF275C51BD96B380084A449 /* Infuse BeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275C61BD96B380084A449 /* Infuse_BeaconTests.swift */,
+				FBF275C81BD96B380084A449 /* Info.plist */,
+			);
+			path = "Infuse BeaconTests";
+			sourceTree = "<group>";
+		};
+		FBF275D01BD96B380084A449 /* Infuse BeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */,
+				FBF275D31BD96B380084A449 /* Info.plist */,
+			);
+			path = "Infuse BeaconUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF275AD1BD96B370084A449 /* Infuse Beacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF275D61BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse Beacon" */;
+			buildPhases = (
+				FBF275AA1BD96B370084A449 /* Sources */,
+				FBF275AB1BD96B370084A449 /* Frameworks */,
+				FBF275AC1BD96B370084A449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infuse Beacon";
+			productName = "Infuse Beacon";
+			productReference = FBF275AE1BD96B370084A449 /* Infuse Beacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF275C11BD96B380084A449 /* Infuse BeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF275D91BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse BeaconTests" */;
+			buildPhases = (
+				FBF275BE1BD96B380084A449 /* Sources */,
+				FBF275BF1BD96B380084A449 /* Frameworks */,
+				FBF275C01BD96B380084A449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF275C41BD96B380084A449 /* PBXTargetDependency */,
+			);
+			name = "Infuse BeaconTests";
+			productName = "Infuse BeaconTests";
+			productReference = FBF275C21BD96B380084A449 /* Infuse BeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBF275CC1BD96B380084A449 /* Infuse BeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF275DC1BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse BeaconUITests" */;
+			buildPhases = (
+				FBF275C91BD96B380084A449 /* Sources */,
+				FBF275CA1BD96B380084A449 /* Frameworks */,
+				FBF275CB1BD96B380084A449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF275CF1BD96B380084A449 /* PBXTargetDependency */,
+			);
+			name = "Infuse BeaconUITests";
+			productName = "Infuse BeaconUITests";
+			productReference = FBF275CD1BD96B380084A449 /* Infuse BeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF275A61BD96B370084A449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = waynehui;
+				TargetAttributes = {
+					FBF275AD1BD96B370084A449 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 34JL6X48Z9;
+					};
+					FBF275C11BD96B380084A449 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 34JL6X48Z9;
+						TestTargetID = FBF275AD1BD96B370084A449;
+					};
+					FBF275CC1BD96B380084A449 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 34JL6X48Z9;
+						TestTargetID = FBF275AD1BD96B370084A449;
+					};
+				};
+			};
+			buildConfigurationList = FBF275A91BD96B370084A449 /* Build configuration list for PBXProject "Infuse Beacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF275A51BD96B370084A449;
+			productRefGroup = FBF275AF1BD96B370084A449 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF275AD1BD96B370084A449 /* Infuse Beacon */,
+				FBF275C11BD96B380084A449 /* Infuse BeaconTests */,
+				FBF275CC1BD96B380084A449 /* Infuse BeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF275AC1BD96B370084A449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF275BC1BD96B370084A449 /* LaunchScreen.storyboard in Resources */,
+				FBF275B91BD96B370084A449 /* Assets.xcassets in Resources */,
+				FBF275B71BD96B370084A449 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275C01BD96B380084A449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275CB1BD96B380084A449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF275AA1BD96B370084A449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF275B41BD96B370084A449 /* ViewController.swift in Sources */,
+				FBF275B21BD96B370084A449 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275BE1BD96B380084A449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF275C71BD96B380084A449 /* Infuse_BeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF275C91BD96B380084A449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF275D21BD96B380084A449 /* Infuse_BeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF275C41BD96B380084A449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF275AD1BD96B370084A449 /* Infuse Beacon */;
+			targetProxy = FBF275C31BD96B380084A449 /* PBXContainerItemProxy */;
+		};
+		FBF275CF1BD96B380084A449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF275AD1BD96B370084A449 /* Infuse Beacon */;
+			targetProxy = FBF275CE1BD96B380084A449 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF275B51BD96B370084A449 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF275B61BD96B370084A449 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF275BB1BD96B370084A449 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF275D41BD96B380084A449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBF275D51BD96B380084A449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF275D71BD96B380084A449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBF275D81BD96B380084A449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBF275DA1BD96B380084A449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Infuse BeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-BeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infuse Beacon.app/Infuse Beacon";
+			};
+			name = Debug;
+		};
+		FBF275DB1BD96B380084A449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Infuse BeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-BeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infuse Beacon.app/Infuse Beacon";
+			};
+			name = Release;
+		};
+		FBF275DD1BD96B380084A449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Infuse BeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-BeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Infuse Beacon";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FBF275DE1BD96B380084A449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Infuse BeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-BeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Infuse Beacon";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF275A91BD96B370084A449 /* Build configuration list for PBXProject "Infuse Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF275D41BD96B380084A449 /* Debug */,
+				FBF275D51BD96B380084A449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF275D61BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF275D71BD96B380084A449 /* Debug */,
+				FBF275D81BD96B380084A449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBF275D91BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse BeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF275DA1BD96B380084A449 /* Debug */,
+				FBF275DB1BD96B380084A449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBF275DC1BD96B380084A449 /* Build configuration list for PBXNativeTarget "Infuse BeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF275DD1BD96B380084A449 /* Debug */,
+				FBF275DE1BD96B380084A449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF275A61BD96B370084A449 /* Project object */;
+}
