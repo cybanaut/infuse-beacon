@@ -14,6 +14,8 @@
 		FBF275BC1BD96B370084A449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */; };
 		FBF275C71BD96B380084A449 /* Infuse_BeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275C61BD96B380084A449 /* Infuse_BeaconTests.swift */; };
 		FBF275D21BD96B380084A449 /* Infuse_BeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */; };
+		FBF275E01BD96BF90084A449 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275DF1BD96BF90084A449 /* signInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FBF275E41BD96DA20084A449 /* MegaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275E31BD96DA20084A449 /* MegaTheme.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FBF275CD1BD96B380084A449 /* Infuse BeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infuse BeaconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infuse_BeaconUITests.swift; sourceTree = "<group>"; };
 		FBF275D31BD96B380084A449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF275DF1BD96BF90084A449 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = signInViewController.swift; path = view/signInViewController.swift; sourceTree = "<group>"; };
+		FBF275E31BD96DA20084A449 /* MegaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MegaTheme.swift; path = Theme/MegaTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		FBF275B01BD96B370084A449 /* Infuse Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				FBF275E21BD96D5A0084A449 /* Theme */,
+				FBF275E11BD96C080084A449 /* view */,
 				FBF275B11BD96B370084A449 /* AppDelegate.swift */,
 				FBF275B31BD96B370084A449 /* ViewController.swift */,
 				FBF275B51BD96B370084A449 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				FBF275D31BD96B380084A449 /* Info.plist */,
 			);
 			path = "Infuse BeaconUITests";
+			sourceTree = "<group>";
+		};
+		FBF275E11BD96C080084A449 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275DF1BD96BF90084A449 /* signInViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		FBF275E21BD96D5A0084A449 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FBF275E31BD96DA20084A449 /* MegaTheme.swift */,
+			);
+			name = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF275B41BD96B370084A449 /* ViewController.swift in Sources */,
+				FBF275E01BD96BF90084A449 /* signInViewController.swift in Sources */,
 				FBF275B21BD96B370084A449 /* AppDelegate.swift in Sources */,
+				FBF275E41BD96DA20084A449 /* MegaTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
