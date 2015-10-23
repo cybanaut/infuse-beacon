@@ -101,12 +101,102 @@ class signInViewController: UIViewController {
     
     func signIn(){
         print("yes")
+        let loginIdEmail:String = userTextField.text!
+        let password:String = passwordTextField.text!
+        
+        if (loginIdEmail.isEmpty || password.isEmpty){
+            displayAlertMessage("Login ID and Password required!")
+            return
+        }
+        
+        let serverURL = "http://beacon.infusecreativeinc.com/server/submitLogin.php"
+        let urlString = serverURL + "?login=" + loginIdEmail + "&password=" + password
+        
+        let session = NSURLSession.sharedSession()
+        let shotsUrl = NSURL(string: urlString)
+        
+        let task = session.dataTaskWithURL(shotsUrl!){
+            (data, response, error) -> Void in
+            
+            print("Response: \(response)")
+            let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
+            print("Body: \(strData)")
+            
+            
+            if error != nil {
+                print(error!.localizedDescription)
+            } else {
+                
+                let json: NSDictionary?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data! , options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    if let parseJSON = json {
+                        // Okay, the parsedJSON is here, let's get the value for 'success' out of it
+                        let success = parseJSON["return_code"] as? Int
+                        print("Succes: \(success)")
+                        
+                        
+                        if(success==0){
+                            //Login success
+                            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "userLoggedIn")
+                            NSUserDefaults.standardUserDefaults().synchronize()
+                            self.dismissViewControllerAnimated(true, completion: nil)
+                        }else{
+                            let error_title = parseJSON["error_title"] as? String
+                            let error_message = parseJSON["error_message"] as? String
+                            
+                            let alertMsg = UIAlertController(title: error_title, message: error_message, preferredStyle: UIAlertControllerStyle.Alert)
+                            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                            
+                            alertMsg.addAction(okAction)
+                            
+                            //self.presentViewController(alertMsg, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                }catch let dataError {
+                    // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
+                    print(dataError)
+                    let jsonStr = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    print("Error could not parse JSON: '\(jsonStr)'")
+                    // return or throw?
+                    return
+                }
+            }
+        }
+        task.resume()
     }
+
+    func displayAlertMessage(displayMessage:String){
+        
+        let alertMsg = UIAlertController(title: "Alert", message: displayMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alertMsg.addAction(okAction)
+        
+        self.presentViewController(alertMsg, animated: true, completion: nil)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        titleLabel.hidden = newCollection.verticalSizeClass == UIUserInterfaceSizeClass.Compact    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
+    func dismiss(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
     
 
     /*
