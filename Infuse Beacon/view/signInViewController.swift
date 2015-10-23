@@ -135,22 +135,26 @@ class signInViewController: UIViewController {
                         let success = parseJSON["return_code"] as? Int
                         print("Succes: \(success)")
                         
-                        
                         if(success==0){
                             //Login success
                             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "userLoggedIn")
                             NSUserDefaults.standardUserDefaults().synchronize()
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }else{
-                            let error_title = parseJSON["error_title"] as? String
+                            //let error_title = parseJSON["error_title"] as? String
                             let error_message = parseJSON["error_message"] as? String
-                            
+                            /*
                             let alertMsg = UIAlertController(title: error_title, message: error_message, preferredStyle: UIAlertControllerStyle.Alert)
                             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                             
                             alertMsg.addAction(okAction)
                             
-                            //self.presentViewController(alertMsg, animated: true, completion: nil)
+                            self.presentViewController(alertMsg, animated: true, completion: nil)
+*/
+                            
+                            NSOperationQueue.mainQueue().addOperationWithBlock {
+                                self.displayAlertMessage(error_message!)
+                            }
                             
                         }
                         
