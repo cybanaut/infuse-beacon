@@ -8,7 +8,7 @@
 
 import UIKit
 
-class signInViewController: UIViewController {
+class signInViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var titleLabel : UILabel!
     
@@ -96,10 +96,16 @@ class signInViewController: UIViewController {
         userTextField.text = ""
         userTextField.font = UIFont(name: MegaTheme.fontName, size: 20)
         userTextField.textColor = UIColor.whiteColor()
+        
+        self.userTextField.delegate = self;
+        self.passwordTextField.delegate = self;
 
     }
     
     func signIn(){
+        
+        
+        
         print("yes")
         let loginIdEmail:String = userTextField.text!
         let password:String = passwordTextField.text!
@@ -183,6 +189,14 @@ class signInViewController: UIViewController {
         self.presentViewController(alertMsg, animated: true, completion: nil)
     }
 
+    func dismiss(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -197,9 +211,7 @@ class signInViewController: UIViewController {
         return .LightContent
     }
     
-    func dismiss(){
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+    
 
     
 
