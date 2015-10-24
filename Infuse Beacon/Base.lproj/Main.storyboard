@@ -25,8 +25,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIZ-na-87L">
-                                <rect key="frame" x="155" y="188" width="300" height="72"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIZ-na-87L">
+                                <rect key="frame" x="155" y="188" width="300" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYR-xc-MmY">
                                         <rect key="frame" x="0.0" y="53" width="300" height="1"/>
@@ -57,7 +57,7 @@
                                     <constraint firstItem="O29-Ru-fQh" firstAttribute="leading" secondItem="KIZ-na-87L" secondAttribute="leading" id="Lvq-yG-oUw"/>
                                     <constraint firstItem="ZYR-xc-MmY" firstAttribute="top" secondItem="O29-Ru-fQh" secondAttribute="bottom" constant="8" id="P8q-39-N38"/>
                                     <constraint firstAttribute="trailing" secondItem="acr-Pl-bCg" secondAttribute="trailing" id="S3Y-Yp-dzK"/>
-                                    <constraint firstAttribute="height" constant="72" id="Xg1-zz-6LB"/>
+                                    <constraint firstAttribute="height" constant="72" id="Xg1-zz-6LB" userLabel="height = 70"/>
                                     <constraint firstItem="ZYR-xc-MmY" firstAttribute="top" secondItem="acr-Pl-bCg" secondAttribute="bottom" constant="3" id="b6F-aN-WfS"/>
                                     <constraint firstAttribute="trailing" secondItem="ZYR-xc-MmY" secondAttribute="trailing" id="iXr-rF-vRZ"/>
                                     <constraint firstItem="ZYR-xc-MmY" firstAttribute="leading" secondItem="KIZ-na-87L" secondAttribute="leading" id="jyQ-Ps-p6x"/>
@@ -161,6 +161,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <activityIndicatorView autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9ay-aw-ua8">
+                                <rect key="frame" x="281" y="282" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,6 +198,7 @@
                         <outlet property="bgImageView" destination="VhH-Uo-Wg9" id="4HC-Zs-Kf8"/>
                         <outlet property="facebookButton" destination="WU4-2w-GQU" id="m0W-Mi-kG9"/>
                         <outlet property="forgotPassword" destination="BZJ-fN-xKN" id="TlB-d4-b15"/>
+                        <outlet property="mySpinner" destination="9ay-aw-ua8" id="vBJ-8u-F1M"/>
                         <outlet property="noAccountButton" destination="apk-IH-adf" id="57n-oW-bWW"/>
                         <outlet property="passwordContainer" destination="f1S-CX-Ism" id="W0q-Pc-lwu"/>
                         <outlet property="passwordLabel" destination="S0y-DP-dtP" id="R2u-6t-qaM"/>

@@ -32,6 +32,8 @@ class signInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userTextField : UITextField!
     @IBOutlet var userUnderline : UIView!
 
+    @IBOutlet weak var mySpinner: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bgImageView.image = UIImage(named: "nav-bg-2")
@@ -135,6 +137,8 @@ class signInViewController: UIViewController, UITextFieldDelegate {
                 
                 let json: NSDictionary?
                 do {
+                    self.mySpinner.startAnimating()
+                    
                     json = try NSJSONSerialization.JSONObjectWithData(data! , options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
                     if let parseJSON = json {
                         // Okay, the parsedJSON is here, let's get the value for 'success' out of it
@@ -163,6 +167,8 @@ class signInViewController: UIViewController, UITextFieldDelegate {
                             }
                             
                         }
+                        
+                        self.mySpinner.stopAnimating()
                         
                     }
                 }catch let dataError {
