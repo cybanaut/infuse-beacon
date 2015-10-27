@@ -243,7 +243,7 @@
 				TargetAttributes = {
 					FBF275AD1BD96B370084A449 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 34JL6X48Z9;
+						DevelopmentTeam = 4BD9K57YRF;
 					};
 					FBF275C11BD96B380084A449 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -464,6 +464,7 @@
 					Beacon/BeaconstacSDK,
 				);
 				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +487,7 @@
 					Beacon/BeaconstacSDK,
 				);
 				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
