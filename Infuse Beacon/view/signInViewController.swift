@@ -152,7 +152,8 @@ class signInViewController: UIViewController, UITextFieldDelegate {
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }else{
                             //let error_title = parseJSON["error_title"] as? String
-                            let error_message = parseJSON["error_message"] as? String
+                            var error_message = parseJSON["error_message"] as? String
+                            error_message = error_message!.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
                             /*
                             let alertMsg = UIAlertController(title: error_title, message: error_message, preferredStyle: UIAlertControllerStyle.Alert)
                             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -216,7 +217,6 @@ class signInViewController: UIViewController, UITextFieldDelegate {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
-    
     
 
     

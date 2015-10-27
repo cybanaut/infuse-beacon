@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBDB53661BDA1CCF00589C3D /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB53651BDA1CCF00589C3D /* mainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FB2BA73C1BDE797C00CC110B /* Beaconstac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BA73B1BDE797C00CC110B /* Beaconstac.framework */; };
+		FB2BA73E1BDE79D600CC110B /* BeaconstacData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB2BA73D1BDE79D600CC110B /* BeaconstacData.bundle */; };
+		FB2BA7401BDE7F8100CC110B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BA73F1BDE7F8100CC110B /* CoreBluetooth.framework */; };
+		FB2BA7421BDE7F9000CC110B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BA7411BDE7F9000CC110B /* SystemConfiguration.framework */; };
+		FB2BA7441BDE7FA300CC110B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BA7431BDE7FA300CC110B /* CoreLocation.framework */; };
+		FB2BA7461BDE7FB300CC110B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2BA7451BDE7FB300CC110B /* CoreData.framework */; };
+		FBDB53661BDA1CCF00589C3D /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB53651BDA1CCF00589C3D /* mainViewController.swift */; };
 		FBF275B21BD96B370084A449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275B11BD96B370084A449 /* AppDelegate.swift */; };
 		FBF275B41BD96B370084A449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275B31BD96B370084A449 /* ViewController.swift */; };
 		FBF275B71BD96B370084A449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF275B51BD96B370084A449 /* Main.storyboard */; };
@@ -15,8 +21,8 @@
 		FBF275BC1BD96B370084A449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */; };
 		FBF275C71BD96B380084A449 /* Infuse_BeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275C61BD96B380084A449 /* Infuse_BeaconTests.swift */; };
 		FBF275D21BD96B380084A449 /* Infuse_BeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275D11BD96B380084A449 /* Infuse_BeaconUITests.swift */; };
-		FBF275E01BD96BF90084A449 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275DF1BD96BF90084A449 /* signInViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FBF275E41BD96DA20084A449 /* MegaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275E31BD96DA20084A449 /* MegaTheme.swift */; settings = {ASSET_TAGS = (); }; };
+		FBF275E01BD96BF90084A449 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275DF1BD96BF90084A449 /* signInViewController.swift */; };
+		FBF275E41BD96DA20084A449 /* MegaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF275E31BD96DA20084A449 /* MegaTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2BA73B1BDE797C00CC110B /* Beaconstac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beaconstac.framework; path = "Infuse Beacon/BeaconstacSDK/Beaconstac.framework"; sourceTree = "<group>"; };
+		FB2BA73D1BDE79D600CC110B /* BeaconstacData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BeaconstacData.bundle; path = "Infuse Beacon/BeaconstacData.bundle"; sourceTree = "<group>"; };
+		FB2BA73F1BDE7F8100CC110B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FB2BA7411BDE7F9000CC110B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB2BA7431BDE7FA300CC110B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB2BA7451BDE7FB300CC110B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FB2BA7C11BDEFA0E00CC110B /* Infuse Beacon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Infuse Beacon-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBDB53651BDA1CCF00589C3D /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		FBF275AE1BD96B370084A449 /* Infuse Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infuse Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF275B11BD96B370084A449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2BA7461BDE7FB300CC110B /* CoreData.framework in Frameworks */,
+				FB2BA7441BDE7FA300CC110B /* CoreLocation.framework in Frameworks */,
+				FB2BA7421BDE7F9000CC110B /* SystemConfiguration.framework in Frameworks */,
+				FB2BA7401BDE7F8100CC110B /* CoreBluetooth.framework in Frameworks */,
+				FB2BA73C1BDE797C00CC110B /* Beaconstac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,12 @@
 		FBF275A51BD96B370084A449 = {
 			isa = PBXGroup;
 			children = (
+				FB2BA73D1BDE79D600CC110B /* BeaconstacData.bundle */,
+				FB2BA7451BDE7FB300CC110B /* CoreData.framework */,
+				FB2BA7431BDE7FA300CC110B /* CoreLocation.framework */,
+				FB2BA7411BDE7F9000CC110B /* SystemConfiguration.framework */,
+				FB2BA73B1BDE797C00CC110B /* Beaconstac.framework */,
+				FB2BA73F1BDE7F8100CC110B /* CoreBluetooth.framework */,
 				FBF275B01BD96B370084A449 /* Infuse Beacon */,
 				FBF275C51BD96B380084A449 /* Infuse BeaconTests */,
 				FBF275D01BD96B380084A449 /* Infuse BeaconUITests */,
@@ -111,6 +135,7 @@
 				FBF275B81BD96B370084A449 /* Assets.xcassets */,
 				FBF275BA1BD96B370084A449 /* LaunchScreen.storyboard */,
 				FBF275BD1BD96B370084A449 /* Info.plist */,
+				FB2BA7C11BDEFA0E00CC110B /* Infuse Beacon-Bridging-Header.h */,
 			);
 			path = "Infuse Beacon";
 			sourceTree = "<group>";
@@ -212,6 +237,7 @@
 		FBF275A61BD96B370084A449 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = waynehui;
 				TargetAttributes = {
@@ -258,6 +284,7 @@
 			files = (
 				FBF275BC1BD96B370084A449 /* LaunchScreen.storyboard in Resources */,
 				FBF275B91BD96B370084A449 /* Assets.xcassets in Resources */,
+				FB2BA73E1BDE79D600CC110B /* BeaconstacData.bundle in Resources */,
 				FBF275B71BD96B370084A449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,10 +454,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Infuse",
+					Beacon,
+					"$(PROJECT_DIR)/Infuse",
+					Beacon/BeaconstacSDK,
+				);
 				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Infuse Beacon/Infuse Beacon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -438,10 +476,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Infuse",
+					Beacon,
+					"$(PROJECT_DIR)/Infuse",
+					Beacon/BeaconstacSDK,
+				);
 				INFOPLIST_FILE = "Infuse Beacon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.waynesworld.Infuse-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Infuse Beacon/Infuse Beacon-Bridging-Header.h";
 			};
 			name = Release;
 		};
